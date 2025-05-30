@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 
 namespace MiniAccountSystem.Models.ChartOfAccount
 {
@@ -15,11 +16,11 @@ namespace MiniAccountSystem.Models.ChartOfAccount
 
  
         public int AccountTypeID { get; set; }
-
+        [BindNever]
         public string AccountTypeName { get; set; } 
 
         public int? ParentAccountID { get; set; }
-
+        [BindNever]
         public string ParentAccountName { get; set; } 
 
         [StringLength(500)]

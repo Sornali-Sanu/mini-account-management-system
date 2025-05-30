@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\chartofaccount\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:models\\chartofaccount\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MiniAccountDb/True/SqlTable/dbo.Accounts.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,50 +31,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.Accounts [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MiniAccountDb/True/SqlTable/dbo.Accounts.sql",
-              "ToolTip": "dbo.Accounts [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-30T05:47:14.897Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Accounts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Accounts\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T07:04:48.555Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Accounts\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Create.cshtml.cs",
-              "RelativeToolTip": "Pages\\Accounts\\Create.cshtml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Accounts\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Accounts\\Edit.cshtml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwD8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T05:09:43.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Create.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Accounts\\Create.cshtml",
-              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Create.cshtml",
-              "RelativeToolTip": "Pages\\Accounts\\Create.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T05:08:21.052Z",
+              "WhenOpened": "2025-05-30T06:33:04.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\ChartOfAccount\\AccountViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ChartOfAccount\\AccountViewModel.cs",
-              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\ChartOfAccount\\AccountViewModel.cs",
-              "RelativeToolTip": "Models\\ChartOfAccount\\AccountViewModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T03:27:43.111Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Accounts\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Accounts\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T06:31:38.633Z",
               "EditorCaption": ""
             }
           ]

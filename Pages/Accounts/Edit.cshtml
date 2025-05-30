@@ -1,0 +1,48 @@
+﻿@page
+@model MiniAccountSystem.Pages.Accounts.EditModel
+@{
+    ViewData["Title"] = "Edit Account";
+}
+<h2>Edit Account</h2>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" asp-for="Account.AccountID" />
+
+    <div class="form-group">
+        <label asp-for="Account.AccountName" class="control-label"></label>
+        <input asp-for="Account.AccountName" class="form-control" />
+        <span asp-validation-for="Account.AccountName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.AccountCode" class="control-label"></label>
+        <input asp-for="Account.AccountCode" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.AccountTypeID" class="control-label"></label>
+        <select asp-for="Account.AccountTypeID" asp-items="Model.AccountTypeList" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.ParentAccountID" class="control-label"></label>
+        <select asp-for="Account.ParentAccountID" asp-items="Model.ParentAccountList" class="form-control">
+            <option value="">-- None --</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.Description" class="control-label"></label>
+        <textarea asp-for="Account.Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-check">
+        <input asp-for="Account.IsActive" class="form-check-input" />
+        <label asp-for="Account.IsActive" class="form-check-label"></label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+</form>
