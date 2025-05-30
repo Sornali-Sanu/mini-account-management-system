@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using MiniAccountSystem.Services;
 
 namespace MiniAccountSystem.Models
 {
@@ -30,6 +31,45 @@ namespace MiniAccountSystem.Models
 
 
             }
+
+            var accessService = serviceProvider.GetRequiredService<ModuleAccessService>();
+            await accessService.GrantAccessAsync("Admin", "Index");
+            await accessService.GrantAccessAsync("Admin", "Create");
+            await accessService.GrantAccessAsync("Admin", "Edit");
+            await accessService.GrantAccessAsync("Admin", "Delete");
+            await accessService.GrantAccessAsync("Admin", "Details");
+
+
+           
+            // Create accountant
+            string accountantEmail = "accountant@gmail.com";
+            string accountantPass = "Accountant@123";
+            if (await userManager.FindByEmailAsync(accountantEmail) == null)
+            {
+                var user = new IdentityUser { UserName = accountantEmail, Email = accountantEmail };
+                if ((await userManager.CreateAsync(user, accountantPass)).Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, "Accountant");
+
+                  
+                    await accessService.GrantAccessAsync("Accountant", "Index");
+                    await accessService.GrantAccessAsync("Accountant", "Create");
+                    await accessService.GrantAccessAsync("Accountant", "Details");
+                }
+            }
+        
+
+
+
+            if (!await roleManager.RoleExistsAsync("Viewer"))
+            {
+                await roleManager.CreateAsync(new IdentityRole("Viewer"));
+                
+            }
+            await accessService.GrantAccessAsync("Viewer", "Index");
+            await accessService.GrantAccessAsync("Viewer", "Details");
+
+
         }
     }
 }

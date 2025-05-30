@@ -6,9 +6,11 @@ using MiniAccountSystem.Models.ChartOfAccount;
 using MiniAccountSystem.Models;
 using System.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MiniAccountSystem.Pages.Accounts
 {
+    [Authorize(Roles = "Admin,Accountant")]
     public class CreateModel : PageModel
     {
         private readonly AppDbContext _context;

@@ -1,21 +1,27 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using MiniAccountSystem.Models;
 using MiniAccountSystem.Models.ChartOfAccount;
+using MiniAccountSystem.Services;
 
 namespace MiniAccountSystem.Pages.Accounts
 {
-    [Authorize]
+
+    [Authorize(Roles = "Admin,Accountant,Viewer")]
     public class IndexModel : PageModel
     {
         private readonly AppDbContext _context;
-
-        public IndexModel(AppDbContext context)
+        private readonly ModuleAccessService _accessService;
+        private readonly UserManager<IdentityUser> _userManager;
+        public IndexModel(AppDbContext context, ModuleAccessService accessService, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _accessService = accessService;
+            _userManager = userManager;
         }
 
        
@@ -31,13 +37,32 @@ namespace MiniAccountSystem.Pages.Accounts
                 .ToListAsync();
         }
 
-        public async Task OnGetAsync()
+        public async Task<IActionResult> OnGetAsync()
         {
-         await LoadAccountsAsync();
+            //await LoadAccountsAsync();
+            var user = await _userManager.GetUserAsync(User);
+            var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault();
+
+            var hasAccess = await _accessService.HasAccessAsync(role, "Index");
+
+            if (!hasAccess)
+            {
+                return Forbid();
+            }
+
+            await LoadAccountsAsync();
+            return Page();
         }
+
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> OnPostDeleteAsync(int id)
         {
-          
+            if (!User.IsInRole("Admin"))
+            {
+                return Forbid();
+            }
+
             var connection = _context.Database.GetDbConnection();
 
             try

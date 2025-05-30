@@ -1,54 +1,179 @@
 ﻿
+@* @page *@
+@* @model MiniAccountSystem.Pages.Accounts.IndexModel *@
+@* @using Microsoft.AspNetCore.Identity *@
+@* @using MiniAccountSystem.Services *@
+@* @inject UserManager<IdentityUser> UserManager *@
+
+@* @{ *@
+@*     var isAdmin = User.IsInRole("Admin"); *@
+@*     var canCreate = User.IsInRole("Admin") || User.IsInRole("Accountant"); *@
+    
+@*     @if (User.IsInRole("Admin") || User.IsInRole("Accountant")) *@
+@*     { *@
+@*         <a asp-page="./Create" class="btn btn-primary mb-3">+ Create New Account</a> *@
+@*     } *@
+
+@*     <h1>Accounts List</h1> *@
+
+@*     @inject ModuleAccessService AccessService *@
+
+@*     @inject UserManager<IdentityUser> UserManager *@
+@*     <table class="table table-bordered table-striped"> *@
+@*         <thead> *@
+@*             <tr> *@
+@*                 <th>Account Name</th> *@
+@*                 <th>Account Code</th> *@
+@*                 <th>Account Type</th> *@
+@*                 <th>Parent Account</th> *@
+@*                 <th>Is Active</th> *@
+@*                 <th>Created Date</th> *@
+@*                 <th>Description</th> *@
+@*                 <th>Action</th> *@
+@*             </tr> *@
+@*         </thead> *@
+@*         <tbody> *@
+@*             @if (Model.AccountsList != null && Model.AccountsList.Any()) *@
+@*             { *@
+@*                 foreach (var item in Model.AccountsList) *@
+@*                 { *@
+@*                     <tr> *@
+@*                         <td>@item.AccountName</td> *@
+@*                         <td>@item.AccountCode</td> *@
+@*                         <td>@item.AccountType?.AccountTypeName</td> *@
+@*                         <td>@(item.ParentAccount?.AccountName ?? "N/A")</td> *@
+@*                         <td>@(item.IsActive ? "Yes" : "No")</td> *@
+@*                         <td>@item.CreatedDate.ToString("yyyy-MM-dd")</td> *@
+@*                         <td>@item.Description</td> *@
+                      
+@*                         <td> *@
+@*                             <a asp-page="Details" asp-route-id="@item.AccountID" class="btn btn-info btn-sm">Details</a> *@
+@*                             @if (isAdmin) *@
+@*                             { *@
+@*                                 <div> *@
+@*                                     <a asp-page="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-primary">Edit</a> || *@
+@*                                     <form method="post" asp-page-handler="Delete" asp-route-id="@item.AccountID" *@
+@*                                           onsubmit="return confirm('Are you sure?');" *@
+@*                                           style="display:inline;"> *@
+@*                                         <button type="submit" class="btn btn-danger btn-sm">Delete</button> *@
+@*                                     </form> *@
+@*                                 </div> *@
+@*                             } *@
+@*                             else *@
+@*                             { *@
+@*                                 <span class="text-muted">No actions available</span> *@
+@*                             } *@
+@*                         </td> *@
+
+@*                     </tr> *@
+@*                 } *@
+@*             } *@
+@*             else *@
+@*             { *@
+@*                 <tr><td colspan="7" class="text-center">No accounts found.</td></tr> *@
+@*             } *@
+@*         </tbody> *@
+@*     </table> *@
+
+@*     } *@
+
 @page
 @model MiniAccountSystem.Pages.Accounts.IndexModel
+@using Microsoft.AspNetCore.Identity
+@using MiniAccountSystem.Services
+@inject ModuleAccessService AccessService
+@inject UserManager<IdentityUser> UserManager
 
 @{
-    <h1>Accounts List</h1>
+    // Get current user and roles
+    var user = await UserManager.GetUserAsync(User);
+    var roles = await UserManager.GetRolesAsync(user);
+    var role = roles.FirstOrDefault();
+
+    // If no role found, fallback to empty string
+    role ??= "";
+
+    // Check module access dynamically via stored procedures
+    var canCreate = await AccessService.HasAccessAsync(role, "Create");
+    var canEdit = await AccessService.HasAccessAsync(role, "Edit");
+    var canDelete = await AccessService.HasAccessAsync(role, "Delete");
+    var canViewDetails = await AccessService.HasAccessAsync(role, "Details");
+}
+
+<h1>Accounts List</h1>
+
+@if (canCreate)
+{
     <a asp-page="./Create" class="btn btn-primary mb-3">+ Create New Account</a>
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>Account Name</th>
-                <th>Account Code</th>
-                <th>Account Type</th>
-                <th>Parent Account</th>
-                <th>Is Active</th>
-                <th>Created Date</th>
-                <th>Description</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model.AccountsList != null && Model.AccountsList.Any())
+}
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Account Name</th>
+            <th>Account Code</th>
+            <th>Account Type</th>
+            <th>Parent Account</th>
+            <th>Is Active</th>
+            <th>Created Date</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.AccountsList != null && Model.AccountsList.Any())
+        {
+            foreach (var item in Model.AccountsList)
             {
-                foreach (var item in Model.AccountsList)
-                {
-                    <tr>
-                        <td>@item.AccountName</td>
-                        <td>@item.AccountCode</td>
-                        <td>@item.AccountType?.AccountTypeName</td>
-                        <td>@(item.ParentAccount?.AccountName ?? "N/A")</td>
-                        <td>@(item.IsActive ? "Yes" : "No")</td>
-                        <td>@item.CreatedDate.ToString("yyyy-MM-dd")</td>
-                        <td>@item.Description</td>
-                        <td>
-                            <a asp-page="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-primary">Edit</a>||
-                            <form method="post" asp-page-handler="Delete" asp-route-id="@item.AccountID" onsubmit="return confirm('Are you sure?');">
+                <tr>
+                    <td>@item.AccountName</td>
+                    <td>@item.AccountCode</td>
+                    <td>@item.AccountType?.AccountTypeName</td>
+                    <td>@(item.ParentAccount?.AccountName ?? "N/A")</td>
+                    <td>@(item.IsActive ? "Yes" : "No")</td>
+                    <td>@item.CreatedDate.ToString("yyyy-MM-dd")</td>
+                    <td>@item.Description</td>
+                    <td>
+                        @* Details button shown only if allowed *@
+                        @if (canViewDetails)
+                        {
+                            <a asp-page="Details" asp-route-id="@item.AccountID" class="btn btn-info btn-sm">Details</a>
+                        }
+
+                        @* Edit button shown if allowed *@
+                        @if (canEdit)
+                        {
+                            <a asp-page="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-primary">Edit</a>
+                        }
+
+                        @* Delete button shown if allowed *@
+                        @if (canDelete)
+                        {
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@item.AccountID"
+                                  onsubmit="return confirm('Are you sure?');"
+                                  style="display:inline;">
                                 <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                             </form>
+                        }
 
-                        </td>
-                    </tr>
-                }
+                        @* If no action permissions, show a message *@
+                        @if (!canViewDetails && !canEdit && !canDelete)
+                        {
+                            <span class="text-muted">No actions available</span>
+                        }
+                    </td>
+                </tr>
             }
-            else
-            {
-                <tr><td colspan="7" class="text-center">No accounts found.</td></tr>
-            }
-        </tbody>
-    </table>
+        }
+        else
+        {
+            <tr>
+                <td colspan="8" class="text-center">No accounts found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 
-}
 
 

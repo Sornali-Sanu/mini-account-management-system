@@ -1,0 +1,64 @@
+﻿@page "{id:int}"
+@model MiniAccountSystem.Pages.Accounts.DetailsModel
+@{
+
+}
+<h1>Account Details</h1>
+
+
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Account Details</h4>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Account Name:</div>
+                <div class="col-sm-8">@Model.Account.AccountName</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Account Code:</div>
+                <div class="col-sm-8">@Model.Account.AccountCode</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Account Type:</div>
+                <div class="col-sm-8">@Model.Account.AccountType?.AccountTypeName</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Parent Account:</div>
+                <div class="col-sm-8">@(Model.Account.ParentAccount?.AccountName ?? "None")</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Description:</div>
+                <div class="col-sm-8">@Model.Account.Description</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Is Active:</div>
+                <div class="col-sm-8">
+                    @if (Model.Account.IsActive)
+                    {
+                        <span class="badge bg-success">Active</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Inactive</span>
+                    }
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 font-weight-bold">Created Date:</div>
+                <div class="col-sm-8">@Model.Account.CreatedDate.ToString("yyyy-MM-dd")</div>
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-page="./Index" class="btn btn-outline-secondary">← Back to List</a>
+        </div>
+    </div>
+</div>

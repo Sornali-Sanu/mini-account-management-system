@@ -12,6 +12,7 @@ namespace MiniAccountSystem.Models
         }
         public virtual DbSet<Account>Accounts { get; set; }
         public virtual DbSet<AccountType> AccountTypes { get; set; }
+        public virtual DbSet<RoleModuleAccess> RoleModuleAccess { get; set; }
 
     }
 }

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MiniAccountSystem.Models;
+using MiniAccountSystem.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 //Configure Database
@@ -10,6 +11,15 @@ builder.Services.AddDbContext<AppDbContext>(op => op.UseSqlServer(builder.Config
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()  
     .AddEntityFrameworkStores<AppDbContext>();
+//addScoped
+builder.Services.AddScoped<ModuleAccessService>();
+
+//AccessDenied
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.AccessDeniedPath = "/AccessDenied";
+});
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
