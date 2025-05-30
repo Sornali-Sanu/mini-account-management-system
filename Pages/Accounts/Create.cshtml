@@ -1,0 +1,54 @@
+﻿@page
+@model MiniAccountSystem.Pages.Accounts.CreateModel
+@{
+    ViewData["Title"] = "Create Account";
+}
+<h1>Create Account</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Account.AccountName"></label>
+        <input asp-for="Account.AccountName" class="form-control" />
+        <span asp-validation-for="Account.AccountName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.AccountCode"></label>
+        <input asp-for="Account.AccountCode" class="form-control" />
+        <span asp-validation-for="Account.AccountCode" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.AccountTypeID">Account Type</label>
+        <select asp-for="Account.AccountTypeID" class="form-control" asp-items="Model.AccountTypes">
+            <option value="">-- Select Account Type --</option>
+        </select>
+        <span asp-validation-for="Account.AccountTypeID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.ParentAccountID">Parent Account</label>
+        <select asp-for="Account.ParentAccountID" class="form-control" asp-items="Model.ParentAccounts">
+            <option value="">-- Select Parent Account (optional) --</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Account.Description"></label>
+        <textarea asp-for="Account.Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group form-check">
+        <input asp-for="Account.IsActive" class="form-check-input" />
+        <label asp-for="Account.IsActive" class="form-check-label"></label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
