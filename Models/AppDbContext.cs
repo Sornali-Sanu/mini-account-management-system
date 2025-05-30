@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MiniAccountSystem.Models.ChartOfAccount;
 
 namespace MiniAccountSystem.Models
 {
@@ -9,6 +10,8 @@ namespace MiniAccountSystem.Models
         {
             
         }
+        public virtual DbSet<Account>Accounts { get; set; }
+        public virtual DbSet<AccountType> AccountTypes { get; set; }
 
     }
 }

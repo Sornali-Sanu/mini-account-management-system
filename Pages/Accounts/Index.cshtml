@@ -1,0 +1,52 @@
+﻿
+@page
+@model MiniAccountSystem.Pages.Accounts.IndexModel
+
+@{
+    <h1>Accounts List</h1>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Account Code</th>
+                <th>Account Type</th>
+                <th>Parent Account</th>
+                <th>Is Active</th>
+                <th>Created Date</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.AccountsList != null && Model.AccountsList.Any())
+            {
+                foreach (var item in Model.AccountsList)
+                {
+                    <tr>
+                        <td>@item.AccountName</td>
+                        <td>@item.AccountCode</td>
+                        <td>@item.AccountType?.AccountTypeName</td>
+                        <td>@(item.ParentAccount?.AccountName ?? "N/A")</td>
+                        <td>@(item.IsActive ? "Yes" : "No")</td>
+                        <td>@item.CreatedDate.ToString("yyyy-MM-dd")</td>
+                        <td>@item.Description</td>
+                        <td>
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@item.AccountID" onsubmit="return confirm('Are you sure?');">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="7" class="text-center">No accounts found.</td></tr>
+            }
+        </tbody>
+    </table>
+
+
+}
+
+
