@@ -19,3 +19,13 @@ Login using the credentials.
 After login, your username and Logout option will appear in the header.
 
 You can add role-based navigation and access restrictions in the next phases.
+
+## 📌 Features
+
+- ✅ List all accounts (hierarchically or flat)
+- ➕ Create a new account
+- ❌ Delete an existing account
+- 🛡️ Secure authentication with ASP.NET Core Identity
+- 📦 SQL Server backend using stored procedures
+- 🎯 Follows clean separation of concerns and uses `ViewModel` binding
+
