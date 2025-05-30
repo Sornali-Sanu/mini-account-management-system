@@ -1,0 +1,31 @@
+﻿@page
+@model MiniAccountSystem.Pages.Vouchers.IndexModel
+@{
+}
+<h2>Voucher List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Voucher ID</th>
+            <th>Voucher Type</th>
+            <th>Voucher Date</th>
+            <th>Reference No</th>
+            <th>Entries Count</th>
+          
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var voucher in Model.Vouchers)
+        {
+            <tr>
+                <td>@voucher.VoucherID</td>
+                <td>@voucher.VoucherType</td>
+                <td>@voucher.VoucherDate.ToShortDateString()</td>
+                <td>@voucher.ReferenceNo</td>
+                <td>@voucher.Entries.Count</td>
+               
+            </tr>
+        }
+    </tbody>
+</table>

@@ -13,6 +13,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<AppDbContext>();
 //addScoped
 builder.Services.AddScoped<ModuleAccessService>();
+//addVouchar
+builder.Services.AddScoped<VoucherService>();
 
 //AccessDenied
 builder.Services.ConfigureApplicationCookie(options =>

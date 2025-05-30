@@ -55,6 +55,7 @@ namespace MiniAccountSystem.Models
                     await accessService.GrantAccessAsync("Accountant", "Index");
                     await accessService.GrantAccessAsync("Accountant", "Create");
                     await accessService.GrantAccessAsync("Accountant", "Details");
+                    await accessService.GrantAccessAsync("Accountant", "CreateVoucher");
                 }
             }
         

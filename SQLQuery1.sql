@@ -95,3 +95,44 @@ BEGIN
     FROM RoleModuleAccess
     WHERE RoleName = @RoleName AND ModuleName = @ModuleName;
 END
+--for voucher
+CREATE TYPE dbo.VoucherEntryType AS TABLE
+(
+    AccountID INT,
+    DebitAmount DECIMAL(18,2),
+    CreditAmount DECIMAL(18,2),
+    Description NVARCHAR(255)
+);
+GO
+
+CREATE PROCEDURE sp_SaveVoucher
+    @VoucherType NVARCHAR(50),
+    @VoucherDate DATE,
+    @ReferenceNo NVARCHAR(50),
+    @CreatedBy INT,
+    @Entries dbo.VoucherEntryType READONLY
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    BEGIN TRANSACTION;
+    BEGIN TRY
+        DECLARE @NewVoucherID INT;
+
+        INSERT INTO Vouchers (VoucherType, VoucherDate, ReferenceNo, CreatedBy, CreatedAt)
+        VALUES (@VoucherType, @VoucherDate, @ReferenceNo, @CreatedBy, GETDATE());
+
+        SET @NewVoucherID = SCOPE_IDENTITY();
+
+        INSERT INTO VoucherEntries (VoucherID, AccountID, DebitAmount, CreditAmount, Description)
+        SELECT @NewVoucherID, AccountID, DebitAmount, CreditAmount, Description
+        FROM @Entries;
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+        THROW;
+    END CATCH
+END
+GO
