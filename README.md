@@ -41,10 +41,32 @@ You can add role-based navigation and access restrictions in the next phases.
 - Bootstrap (for UI)
 - Identity (customized roles)
 
+## 📸 Chart of Accounts Screenshot
+### 🧾 Chart of Accounts
+![HomePage](docs/Images/welcomehomePage.png)
+
+### 🧾 Voucher Entry Page
+![Voucher Entry](docs/Images/createVouchar.png)
+
+### 🧾 Account List
+![Account List](docs/Images/accountList.png)
+
+### 🧾 Create Account Page
+![Create Account](docs/Images/createAccount.png)
+
+### 🧾 Edit Account 
+![Account Type Dropdown](docs/Images/editAccount.png)
+
+### 🧾 Registration
+![Report Page](docs/Images/register.png)
+
+### 🧾 LogIn
+![Dashboard](docs/Images/login.png)
+
   
 ## 🧪 How to Run
 1. Clone the repo
-2. Set up the database and run stored procedures
+2. Set up the database and run stored procedures and add some data to Account Type for DropDown.
 3. Update the connection string in `appsettings.json`
 4. Run the project
 
