@@ -28,4 +28,23 @@ You can add role-based navigation and access restrictions in the next phases.
 - 🛡️ Secure authentication with ASP.NET Core Identity
 - 📦 SQL Server backend using stored procedures
 - 🎯 Follows clean separation of concerns and uses `ViewModel` binding
+- Role-based Authentication (Admin, Accountant, Viewer)
+- Chart of Accounts with Parent/Child Hierarchy
+- Voucher Entries: Journal, Payment, Receipt
+- Stored Procedure 
+- ASP.NET Identity with custom role handling
+- Clean Razor Pages UI
+
+## ⚙️ Technologies Used
+- ASP.NET Core Razor Pages
+- MS SQL Server (with stored procedures)
+- Bootstrap (for UI)
+- Identity (customized roles)
+
+  
+## 🧪 How to Run
+1. Clone the repo
+2. Set up the database and run stored procedures
+3. Update the connection string in `appsettings.json`
+4. Run the project
 
