@@ -100,7 +100,7 @@
               "RelativeDocumentMoniker": "Pages\\Accounts\\Index.cshtml",
               "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Index.cshtml",
               "RelativeToolTip": "Pages\\Accounts\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAACVAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAEYAAACVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-31T06:08:32.532Z",
               "EditorCaption": ""
@@ -115,8 +115,7 @@
               "RelativeToolTip": "Pages\\AccessDenied.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-31T06:04:33.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T06:04:33.372Z"
             },
             {
               "$type": "Document",
@@ -128,8 +127,7 @@
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAoAAAAAAAAAAAAYwB0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-31T05:59:08.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T05:59:08.129Z"
             },
             {
               "$type": "Document",
@@ -141,8 +139,7 @@
               "RelativeToolTip": "Pages\\Vouchers\\CreateVoucher.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T17:39:56.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T17:39:56.779Z"
             },
             {
               "$type": "Document",
@@ -226,8 +223,7 @@
               "RelativeToolTip": "Models\\SeedData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T15:00:11.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T15:00:11.943Z"
             },
             {
               "$type": "Document",
@@ -251,8 +247,7 @@
               "RelativeToolTip": "Pages\\Vouchers\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T18:36:00.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T18:36:00.318Z"
             },
             {
               "$type": "Document",
@@ -264,8 +259,7 @@
               "RelativeToolTip": "Pages\\Accounts\\Edit.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:33:04.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:33:04.527Z"
             },
             {
               "$type": "Document",
@@ -277,8 +271,7 @@
               "RelativeToolTip": "Pages\\Vouchers\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T18:36:06.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T18:36:06.735Z"
             },
             {
               "$type": "Document",
