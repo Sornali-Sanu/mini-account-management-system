@@ -2,5 +2,16 @@
 @model MiniAccountSystem.Pages.AccessDeniedModel
 @{
 }
-<h1>Access Denied</h1>
-<p>You do not have permission to access this resource.</p>
+@* <h1>Access Denied</h1> *@
+@* <p>You do not have permission to access this resource.</p> *@
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="text-center bg-light p-5 rounded shadow-sm border">
+        <h1 class="display-4 text-danger mb-3">
+            <i class="bi bi-shield-lock-fill"></i> Access Denied
+        </h1>
+        <p class="lead text-muted">You do not have permission to access this resource.</p>
+        <a href="/" class="btn btn-primary mt-4">
+            <i class="bi bi-house-door-fill"></i> Return to Home
+        </a>
+    </div>
+</div>

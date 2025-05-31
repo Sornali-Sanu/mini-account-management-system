@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,26 +11,56 @@
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="~/MiniAccountSystem.styles.css" asp-append-version="true" />
+    <style>
+
+        body {
+            background: url('/images/backGround.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .content-overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .btn1 {
+            flex: 1 1 auto;
+            min-width: 0;
+            white-space: nowrap; 
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-           <div>
-                <ul class="navbar-nav">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <!-- Left side: Home and Privacy -->
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-page="/Index">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-page="/Privacy">Privacy</a>
                     </li>
+                </ul>
+
+                <!-- Right side: Auth-related links -->
+                <ul class="navbar-nav ms-auto">
                     @if (User.Identity?.IsAuthenticated ?? false)
                     {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-page="/Accounts/Index">Accounts</a>
                         </li>
                         <li class="nav-item">
-                            <form method="post" asp-page="/Account/Logout" asp-area="Identity" id="logoutForm">
+                            <a class="nav-link text-dark" asp-page="/Vouchers/CreateVoucher">Voucher Entry</a>
+                        </li>
+                        <li class="nav-item">
+                            <form method="post" asp-page="/Account/Logout" asp-area="Identity" id="logoutForm" class="d-inline">
                                 <button type="submit" class="btn btn-link nav-link">Logout</button>
                             </form>
                         </li>
@@ -43,25 +74,26 @@
                             <a class="nav-link text-dark" asp-page="/Account/Register" asp-area="Identity">Register</a>
                         </li>
                     }
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-page="/Vouchers/CreateVoucher">Voucher Entry</a>
-                    </li>
                 </ul>
-
-
-               
             </div>
-
-
         </nav>
     </header>
-    <div class="container">
+
+    <div class="container content-overlay mt-4">
         <main role="main" class="pb-3">
             @RenderBody()
+
+            @if (!(User.Identity?.IsAuthenticated ?? false))
+            {
+                <div class="text-center mt-5">
+                    <a class="btn btn-primary me-3" asp-page="/Account/Login" asp-area="Identity">Login</a>
+                    <a class="btn btn-secondary" asp-page="/Account/Register" asp-area="Identity">Register</a>
+                </div>
+            }
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted mt-auto py-3 bg-light">
         <div class="container">
             &copy; 2025 - MiniAccountSystem - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
@@ -74,3 +106,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

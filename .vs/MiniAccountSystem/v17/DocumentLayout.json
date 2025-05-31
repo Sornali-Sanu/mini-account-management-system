@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\vouchermodels\\voucherentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:models\\vouchermodels\\voucherentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\chartofaccount\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:models\\chartofaccount\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\vouchers\\createvoucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\vouchers\\createvoucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\vouchers\\createvoucher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\vouchers\\createvoucher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\services\\voucherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:services\\voucherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\vouchers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\vouchers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,16 +19,36 @@
       "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\vouchers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\vouchers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\vouchers\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\vouchers\\createvoucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\vouchers\\createvoucher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\vouchermodels\\voucherentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:models\\vouchermodels\\voucherentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\pages\\accounts\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:pages\\accounts\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\services\\voucherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:services\\voucherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{330A9A8A-79BA-479C-A9A7-C55B842C20A2}|MiniAccountSystem.csproj|c:\\users\\sagor\\desktop\\new folder (3)\\mini-account-management-system\\models\\vouchermodels\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,59 +94,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\ChartOfAccount\\Account.cs",
-              "RelativeDocumentMoniker": "Models\\ChartOfAccount\\Account.cs",
-              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\ChartOfAccount\\Account.cs",
-              "RelativeToolTip": "Models\\ChartOfAccount\\Account.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAwDMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T19:25:27.451Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Accounts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Accounts\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-31T06:08:32.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAC4AAABXAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Pages\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\AccessDenied.cshtml",
+              "RelativeToolTip": "Pages\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T17:53:39.472Z",
+              "WhenOpened": "2025-05-31T06:04:33.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateVoucher.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\CreateVoucher.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Vouchers\\CreateVoucher.cshtml.cs",
-              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\CreateVoucher.cshtml.cs",
-              "RelativeToolTip": "Pages\\Vouchers\\CreateVoucher.cshtml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:40:02.263Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-31T05:59:08.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CreateVoucher.cshtml",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\CreateVoucher.cshtml",
               "RelativeDocumentMoniker": "Pages\\Vouchers\\CreateVoucher.cshtml",
               "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\CreateVoucher.cshtml",
               "RelativeToolTip": "Pages\\Vouchers\\CreateVoucher.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-30T17:39:56.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -154,12 +154,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:27:16.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T17:27:16.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "VoucherService.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Services\\VoucherService.cs",
               "RelativeDocumentMoniker": "Services\\VoucherService.cs",
@@ -167,8 +166,7 @@
               "RelativeToolTip": "Services\\VoucherService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowBwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:25:56.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T17:25:56.74Z"
             },
             {
               "$type": "Document",
@@ -180,8 +178,7 @@
               "RelativeToolTip": "Migrations\\20250530124127_initRoleAccess.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:11:27.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T17:11:27.005Z"
             },
             {
               "$type": "Document",
@@ -193,12 +190,11 @@
               "RelativeToolTip": "Models\\RoleModuleAccess.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:08:56.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T17:08:56.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "VoucherEntry.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\VoucherModels\\VoucherEntry.cs",
               "RelativeDocumentMoniker": "Models\\VoucherModels\\VoucherEntry.cs",
@@ -206,8 +202,7 @@
               "RelativeToolTip": "Models\\VoucherModels\\VoucherEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T16:55:23.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T16:55:23.87Z"
             },
             {
               "$type": "Document",
@@ -219,25 +214,24 @@
               "RelativeToolTip": "Models\\VoucherModels\\Voucher.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T16:54:15.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T16:54:15.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\SeedData.cs",
               "RelativeDocumentMoniker": "Models\\SeedData.cs",
               "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Models\\SeedData.cs",
               "RelativeToolTip": "Models\\SeedData.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwC0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T15:00:11.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Accounts\\Index.cshtml.cs",
@@ -245,44 +239,43 @@
               "RelativeToolTip": "Pages\\Accounts\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T11:01:20.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T11:01:20.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Vouchers\\Index.cshtml",
               "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\Index.cshtml",
               "RelativeToolTip": "Pages\\Vouchers\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-30T18:36:00.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Accounts\\Edit.cshtml.cs",
               "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Accounts\\Edit.cshtml.cs",
               "RelativeToolTip": "Pages\\Accounts\\Edit.cshtml.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAcwAcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T06:33:04.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Vouchers\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\Pages\\Vouchers\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Vouchers\\Index.cshtml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T18:36:06.735Z",
               "EditorCaption": ""
@@ -297,8 +290,7 @@
               "RelativeToolTip": "Services\\ModuleAccessService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T14:28:26.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T14:28:26.658Z"
             },
             {
               "$type": "Document",
@@ -310,8 +302,7 @@
               "RelativeToolTip": "Pages\\Accounts\\Details.cshtml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T12:19:13.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T12:19:13.53Z"
             },
             {
               "$type": "Document",
@@ -323,8 +314,7 @@
               "RelativeToolTip": "Models\\AppDbContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA1wBIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T12:40:02.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T12:40:02.344Z"
             },
             {
               "$type": "Document",
@@ -336,8 +326,7 @@
               "RelativeToolTip": "Pages\\Accounts\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T06:31:38.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T06:31:38.633Z"
             }
           ]
         }

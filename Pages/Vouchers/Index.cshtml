@@ -2,30 +2,36 @@
 @model MiniAccountSystem.Pages.Vouchers.IndexModel
 @{
 }
-<h2>Voucher List</h2>
+<h2 style="text-align:center">Voucher List</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Voucher ID</th>
-            <th>Voucher Type</th>
-            <th>Voucher Date</th>
-            <th>Reference No</th>
-            <th>Entries Count</th>
-          
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var voucher in Model.Vouchers)
-        {
-            <tr>
-                <td>@voucher.VoucherID</td>
-                <td>@voucher.VoucherType</td>
-                <td>@voucher.VoucherDate.ToShortDateString()</td>
-                <td>@voucher.ReferenceNo</td>
-                <td>@voucher.Entries.Count</td>
-               
-            </tr>
-        }
-    </tbody>
-</table>
+
+
+<div class="card shadow-sm p-4 mt-4">
+    <h4 class="mb-4">Voucher List</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover align-middle">
+            <thead class="table-light">
+                <tr class="text-center">
+                    <th>Voucher ID</th>
+                    <th>Voucher Type</th>
+                    <th>Voucher Date</th>
+                    <th>Reference No</th>
+                    <th>Entries Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var voucher in Model.Vouchers)
+                {
+                    <tr>
+                        <td class="text-center">@voucher.VoucherID</td>
+                        <td>@voucher.VoucherType</td>
+                        <td>@voucher.VoucherDate.ToShortDateString()</td>
+                        <td>@voucher.ReferenceNo</td>
+                        <td class="text-center">@voucher.Entries.Count</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

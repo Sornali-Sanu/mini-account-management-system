@@ -1,82 +1,4 @@
 ﻿
-@* @page *@
-@* @model MiniAccountSystem.Pages.Accounts.IndexModel *@
-@* @using Microsoft.AspNetCore.Identity *@
-@* @using MiniAccountSystem.Services *@
-@* @inject UserManager<IdentityUser> UserManager *@
-
-@* @{ *@
-@*     var isAdmin = User.IsInRole("Admin"); *@
-@*     var canCreate = User.IsInRole("Admin") || User.IsInRole("Accountant"); *@
-    
-@*     @if (User.IsInRole("Admin") || User.IsInRole("Accountant")) *@
-@*     { *@
-@*         <a asp-page="./Create" class="btn btn-primary mb-3">+ Create New Account</a> *@
-@*     } *@
-
-@*     <h1>Accounts List</h1> *@
-
-@*     @inject ModuleAccessService AccessService *@
-
-@*     @inject UserManager<IdentityUser> UserManager *@
-@*     <table class="table table-bordered table-striped"> *@
-@*         <thead> *@
-@*             <tr> *@
-@*                 <th>Account Name</th> *@
-@*                 <th>Account Code</th> *@
-@*                 <th>Account Type</th> *@
-@*                 <th>Parent Account</th> *@
-@*                 <th>Is Active</th> *@
-@*                 <th>Created Date</th> *@
-@*                 <th>Description</th> *@
-@*                 <th>Action</th> *@
-@*             </tr> *@
-@*         </thead> *@
-@*         <tbody> *@
-@*             @if (Model.AccountsList != null && Model.AccountsList.Any()) *@
-@*             { *@
-@*                 foreach (var item in Model.AccountsList) *@
-@*                 { *@
-@*                     <tr> *@
-@*                         <td>@item.AccountName</td> *@
-@*                         <td>@item.AccountCode</td> *@
-@*                         <td>@item.AccountType?.AccountTypeName</td> *@
-@*                         <td>@(item.ParentAccount?.AccountName ?? "N/A")</td> *@
-@*                         <td>@(item.IsActive ? "Yes" : "No")</td> *@
-@*                         <td>@item.CreatedDate.ToString("yyyy-MM-dd")</td> *@
-@*                         <td>@item.Description</td> *@
-                      
-@*                         <td> *@
-@*                             <a asp-page="Details" asp-route-id="@item.AccountID" class="btn btn-info btn-sm">Details</a> *@
-@*                             @if (isAdmin) *@
-@*                             { *@
-@*                                 <div> *@
-@*                                     <a asp-page="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-primary">Edit</a> || *@
-@*                                     <form method="post" asp-page-handler="Delete" asp-route-id="@item.AccountID" *@
-@*                                           onsubmit="return confirm('Are you sure?');" *@
-@*                                           style="display:inline;"> *@
-@*                                         <button type="submit" class="btn btn-danger btn-sm">Delete</button> *@
-@*                                     </form> *@
-@*                                 </div> *@
-@*                             } *@
-@*                             else *@
-@*                             { *@
-@*                                 <span class="text-muted">No actions available</span> *@
-@*                             } *@
-@*                         </td> *@
-
-@*                     </tr> *@
-@*                 } *@
-@*             } *@
-@*             else *@
-@*             { *@
-@*                 <tr><td colspan="7" class="text-center">No accounts found.</td></tr> *@
-@*             } *@
-@*         </tbody> *@
-@*     </table> *@
-
-@*     } *@
-
 @page
 @model MiniAccountSystem.Pages.Accounts.IndexModel
 @using Microsoft.AspNetCore.Identity
@@ -100,15 +22,16 @@
     var canViewDetails = await AccessService.HasAccessAsync(role, "Details");
 }
 
-<h1>Accounts List</h1>
+<h1 style="text-align:center">Accounts List</h1>
 
 @if (canCreate)
 {
     <a asp-page="./Create" class="btn btn-primary mb-3">+ Create New Account</a>
 }
+<br/>
 
 <table class="table table-bordered table-striped">
-    <thead>
+    <thead style="text-align:center">
         <tr>
             <th>Account Name</th>
             <th>Account Code</th>
@@ -125,7 +48,7 @@
         {
             foreach (var item in Model.AccountsList)
             {
-                <tr>
+                <tr style="text-align:center">
                     <td>@item.AccountName</td>
                     <td>@item.AccountCode</td>
                     <td>@item.AccountType?.AccountTypeName</td>
@@ -137,13 +60,15 @@
                         @* Details button shown only if allowed *@
                         @if (canViewDetails)
                         {
-                            <a asp-page="Details" asp-route-id="@item.AccountID" class="btn btn-info btn-sm">Details</a>
+                            <a asp-page="Details" asp-route-id="@item.AccountID" class="btn btn-info btn-sm btn1">
+                                <i class="bi bi-eye"></i>Details
+                            </a>
                         }
 
                         @* Edit button shown if allowed *@
                         @if (canEdit)
                         {
-                            <a asp-page="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-primary">Edit</a>
+                            <a asp-page="Edit" asp-route-id="@item.AccountID" class="btn btn-sm btn-primary btn1"><i class="bi bi-pencil-square"></i>Edit</a>
                         }
 
                         @* Delete button shown if allowed *@
@@ -152,7 +77,7 @@
                             <form method="post" asp-page-handler="Delete" asp-route-id="@item.AccountID"
                                   onsubmit="return confirm('Are you sure?');"
                                   style="display:inline;">
-                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                <button type="submit" class="btn btn-danger btn-sm btn1"><i class="bi bi-trash"></i>Delete</button>
                             </form>
                         }
 

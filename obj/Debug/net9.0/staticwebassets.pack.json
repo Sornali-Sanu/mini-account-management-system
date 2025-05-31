@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\wwwroot\\images\\backGround.jpg",
+      "PackagePath": "staticwebassets\\images\\backGround.jpg"
+    },
+    {
       "Id": "C:\\Users\\SAGOR\\Desktop\\New folder (3)\\mini-account-management-system\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
